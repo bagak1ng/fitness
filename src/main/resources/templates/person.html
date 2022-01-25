@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:url>
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+        body{
+            background-color: coral;
+            background-image: url("https://idowaz.com/blog/wp-content/uploads/2021/10/Healthy-Food-Doesnt-Have-To-Be-Expensive.jpg");
+        }
+        .container{
+            font-family: 'Ubuntu', sans-serif;
+            background-color: antiquewhite;
+            margin: 200px;
+        }
+        .heading{
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 300px;
+            color: darkgreen;
+            font-size: 40px;
+            font-style: inherit;
+        }
+
+        .pas{
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 200px;
+            font-size: 20px;
+        }
+
+        .submit{
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 430px;
+            margin-bottom: 20px;
+            color: azure;
+            background-color: darkgreen;
+        }
+
+        .age, .weight, .height {
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 350px;
+        }
+
+        .container1 {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: antiquewhite;
+            padding-bottom: 600px;
+
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex: 1 1 40rem;
+            padding: 2rem;
+        }
+        .image{
+            width: 50px;
+            height: 50px;
+            flex-wrap: wrap;
+            padding-top: 100px;
+            margin-right: 1000px;
+        }
+        .image1{
+            width: 50px;
+            height: 50px;
+            margin-left: 700px;
+            flex-wrap: wrap;
+
+        }
+
+        .h1, .h2 {
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 300px;
+            color: darkgreen;
+            font-size: 50px;
+            font-style: inherit;
+            background-color: antiquewhite;
+            padding-right: 100px;
+        }
+        .pas1, .pas2{
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: 20px;
+        }
+        .pas2{
+            background-color: antiquewhite;
+        }
+
+        .container2{
+            font-family: 'Ubuntu', sans-serif;
+            padding-top: 500px;
+            padding-right: 100px;
+            background-color: antiquewhite;
+            background-image: url("https://api.time.com/wp-content/uploads/2015/02/runner-exercise.jpg?w=1600&quality=70");
+        }
+
+        .h2{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 100px;
+            padding-right: 100px;
+        }
+        .logo{
+            background-color: antiquewhite;
+            color: darkgreen;
+            width: 400px;
+            margin: 0 auto;
+            display: block;
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+        span{
+            color: darkgreen;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Title</title>
+    <a class="logo"><span>FIT</span>MCM</a>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div>
+            <h1 class="heading">Calories Calculation</h1>
+            <p class="pas"> Please, enter your parameters: </p>
+        </div>
+
+        <!--/*@thymesVar id="user" type=""*/-->
+        <form th:action="@{result}" th:object="${userca}" method="post">
+
+            <div class="age">
+                <label> Age </label>
+                <input type="text" class="form-control" name="age">
+            </div>
+
+            <div class="weight">
+                <label> Weight (kg) </label>
+                <input type="text" class="form-control" name="weight">
+            </div>
+
+            <div class="height">
+                <label> Height (cm) </label>
+                <input type="text" class="form-control" name="height">
+            </div>
+
+            </br>
+            <div>
+                <input type="submit" class="submit" value="submit"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container1">
+    <div class="info">
+        <div class="content">
+
+            <h1 class="h1">Why keeping calories balanced is so important?</h1>
+            <p class="pas1"> Calories are a measure of energy and are commonly used to describe the energy content of foods.
+                Your body is able to break down food molecules and use the stored energy for many different functions,
+                including movement, thought and growth. Calories also play a role in weight control, because eating more
+                calories than your body needs can lead to weight gain.
+                Keeping the amount of calories you consume balanced with the amount of calories you burn through regular metabolism
+                and physical activity will keep your weight stable. When you take in more calories than your body burns, your body stores
+                these extra calories as fat and you gain weight. Losing weight requires creating a calorie deficit so that your body burns more calories than you take in.
+            </p>
+
+
+        </div>
+
+        <div class="container2">
+            <div class="info1">
+                <div class="content1">
+
+                    <h1 class="h2">The Importance Of Physical Fitness</h1>
+                    <p class="pas2"> Becoming physically fit requires a change in life style as well. You will have to incorporate a regular exercise routine in your life and also eat healthier. By avoiding junk foods, fizzy drinks, bad habits like smoking and alcohol and by getting adequate amount of rest, you will be able to become physically and mentally fit. Just by eliminating all these food substances from your life, no matter how temporarily, you will allow your body to detox and become stronger. Make sure that you spend more time outdoors in the sun, and fresh air and take part in more healthy activities. Fishing, bicycling, swimming, hiking, and even playing foot ball with your kids should be a part of your physically fit lifestyle.
+                        By becoming more active you can increase your body’s fitness levels and also avoid health problems like diabetes and high blood pressure from developing. Exercise is also good for your joints and makes your body stronger overall.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

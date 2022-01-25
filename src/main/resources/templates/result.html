@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  body{
+    width: 1400px;
+    margin: 0 auto;
+    background-image: url("https://realfood.tesco.com/media/images/RFO-1400x919-Fruit-SMOOTHIE-breakfast-bowl--aaf9623d-a628-4c2f-975e-857b0bc5293e-0-1400x919.jpg");
+  }
+  .container{
+    background-color: darkgreen;
+  }
+  .h1 {
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+
+    margin: 200px;
+    size: 200px;
+    background-color: antiquewhite;
+
+
+  }
+  .calorie {
+
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    size: 600px;
+    padding-left: 400px;
+
+  }
+  p{
+    background-color: antiquewhite;
+    padding-left: 200px;
+    size: 300px;
+
+  }
+
+
+  .logo{
+    background-color: antiquewhite;
+    color: darkgreen;
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    font-weight: bolder;
+    font-size: 3rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+  }
+  span{
+    color: darkgreen;
+  }
+
+
+
+
+
+
+  .container1 h3 a {
+    line-height: 3;
+    align-content: center;
+    font-size: 30px;
+    margin: 20px 10px;
+    padding: 15px 0px;
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid darkgreen;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+  }
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Result</title>
+  <a class="logo"><span>FIT</span>MCM</a>
+</head>
+<body>
+<div class="container">
+  <div>
+    <h1 class="h1">Fitness starts <br>
+      with what you eat.</h1>
+    <p class="p1" >Number of calories you should eat per day:</p>
+    <!--/@thymesVar id="getCalorie" type=""/-->
+    <h1 class="calorie" th:text="${person.getCalorie()}"></h1>
+  </div>
+
+</div>
+<div class="container1 text-center"> <h3 class="food"><a th:href="@{/foods}">Foods Calories</a></h3></div>
+
+</body>
+</html>

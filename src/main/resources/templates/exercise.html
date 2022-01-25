@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:url>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <a class="logo"><span>FIT</span>MCM</a>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://phonoteka.org/uploads/posts/2021-05/1620237309_10-phonoteka_org-p-fitnes-fon-vertikalnii-12.jpg");
+        }
+        .container{
+            width: 80%;
+            margin:80px auto;
+        }
+        .container h1{
+            padding: 40px 0;
+            color:#ffffff;
+            font-size: 44px;
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+            display: block;
+            font-weight: bolder;
+            border:2px solid darkgreen;
+            border-radius: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .col{
+            flex-basis: 50%;
+            min-width: 250px;
+        }
+        .video{
+            width: 83%;
+            margin: auto;
+        }
+        .small-video-row{
+            display: flex;
+            background: #efefef;
+            margin: 20px 0;
+            align-items: center;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 85%;
+        }
+        .small-video-row p{
+            color: darkgreen;
+            size: 30px;
+        }
+        .small-video{
+            position: relative;
+        }
+        .small-video iframe{
+            width: 150px;
+        }
+        .logo{
+            background-color: antiquewhite;
+            color: #131a17;
+            width: 400px;
+            margin: 0 auto;
+            display: block;
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+        span{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="container"><h1>Exercise</h1>
+    <div class="row">
+        <div class="col">
+            <div class="video">
+                <iframe width="400" height="315" th:src="@{https://www.youtube.com/embed/j6C-6F6dr-4}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <div class="small-video-row">
+                <div class="small-video">
+                    <iframe width="250" height="150" th:src="@{https://www.youtube.com/embed/Cdngn1xKK4w}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p><b>  15 Min Legs & Booty Workout</b></p>
+            </div>
+            <div class="small-video-row">
+                <div class="small-video">
+                    <iframe width="250" height="150" th:src="@{https://www.youtube.com/embed/Ksui3Ui1o60}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p><b>  15 Min Arms Workout</b></p>
+            </div>
+            <div class="small-video-row">
+                <div class="small-video">
+                    <iframe width="250" height="150" th:src="@{https://www.youtube.com/embed/a0KWT4vIbhQ}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p><b>  11 Min Arms & Upper Body</b></p>
+            </div>
+            <div class="small-video-row">
+                <div class="small-video">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/SX6Vhj9wZh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p><b>  6 Pack Abs</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Generated url: https://www.youtube.com/embed/s39mNwFuQDQ?start=212 -->
+</body>
+</html>
